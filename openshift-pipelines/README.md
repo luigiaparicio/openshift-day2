@@ -1,6 +1,6 @@
 # OpenShuft Pipelines (aka Tekton)
 
-## Install
+## Install Operator
 
 pipelines-operator-subs.yaml
 
@@ -15,6 +15,7 @@ pipelines-operator-subs.yaml
 	  source: redhat-operators 
 	  sourceNamespace: openshift-marketplace
 
+Run:
 
 	$ oc apply -f sub.yaml
 
