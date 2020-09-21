@@ -1,0 +1,21 @@
+# OpenShuft Pipelines (aka Tekton)
+
+## Install
+
+pipelines-operator-subs.yaml
+
+	apiVersion: operators.coreos.com/v1alpha1
+	kind: Subscription
+	metadata:
+	  name: openshift-pipelines-operator
+	  namespace: openshift-operators
+	spec:
+	  channel:  <channel name> 
+	  name: openshift-pipelines-operator-rh 
+	  source: redhat-operators 
+	  sourceNamespace: openshift-marketplace
+
+
+	$ oc apply -f sub.yaml
+
+
