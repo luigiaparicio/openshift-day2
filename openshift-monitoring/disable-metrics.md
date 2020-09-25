@@ -11,6 +11,6 @@
 	    namespace: openshift-monitoring
 	    unmanaged: true
 
-Patch CluesterVersion:
+Patch ClusterVersion:
 
 	oc patch clusterversion version --type json -p "$(cat version-patch.yaml)"
