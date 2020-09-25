@@ -1,6 +1,7 @@
 # How to disable Metrics in OpenShift?
 
 **version-patch.yaml**
+
 	- op: add
 	  path: /spec/overrides
 	  value:
@@ -10,6 +11,6 @@
 	    namespace: openshift-monitoring
 	    unmanaged: true
 
-
+Patch CluesterVersion:
 
 	oc patch clusterversion version --type json -p "$(cat version-patch.yaml)"
